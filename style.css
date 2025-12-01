@@ -1,1 +1,89 @@
-style.css
+/* overall page layout */
+body {
+    margin: 0;
+    padding: 0 1.5rem 3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      sans-serif;
+    line-height: 1.5;
+    background: #ffffff;
+    color: #111111;
+  }
+  
+  /* center column like Owen's */
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  /* top bar with name + links */
+  .site-header {
+    position: sticky;         /* stays at top when you scroll */
+    top: 0;
+    z-index: 10;
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0.75rem 0;
+    margin-bottom: 1.5rem;
+  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* small wrapper so header aligns with main column */
+  .site-header,
+  .site-footer {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* name on the left */
+  .site-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  
+  /* nav links on the right */
+  .site-nav a {
+    margin-left: 0.75rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+    color: #333333;
+  }
+  
+  .site-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* section styling */
+  section {
+    margin-top: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* lists: closer to his style (compact, texty) */
+  ol,
+  ul {
+    padding-left: 1.2rem;
+  }
+  
+  ol li,
+  ul li {
+    margin-bottom: 0.25rem;
+  }
+  
+  /* footer */
+  .site-footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.85rem;
+    color: #666666;
+  }
+  
