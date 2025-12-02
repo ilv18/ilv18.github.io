@@ -9,61 +9,135 @@
 <body>
   <!-- Top navigation bar -->
   <header class="site-header">
-    <div class="site-title">Inga Van den Bossche</div>
-    <nav class="site-nav">
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a href="#blogs">Blogs</a>
-      <a href="#awards">Awards</a>
-      <a href="#papers">Papers</a>
-      <a href="#cv">CV</a>
-    </nav>
+    <div class="site-header-inner">
+      <div class="site-title">Inga Van den Bossche</div>
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#awards">Awards</a>
+        <a href="#blogs">Blogs</a>
+        <a href="#papers">Papers</a>
+        <a href="#cv">CV</a>
+        <a href="https://www.linkedin.com/in/ingavandenbossche/" class="icon-link">in</a>
+        <a href="https://substack.com/@ingavdbossche" class="icon-link">Su</a>
+        <a href="https://github.com/ilv18" class="icon-link">GH</a>
+      </nav>
+    </div>
   </header>
 
   <!-- Main page content -->
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Short 2–3 sentence bio about you and your research interests.
+  <main class="page">
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="about-layout card">
+        <div class="about-photo">
+          <!-- Put your own photo in /assets/headshot.jpg and update src -->
+          <img src="headshot.jpg" alt="Your Name headshot" />
+        </div>
+        <div class="about-text">
+          <p>
+            Hi, I'm [Your Name], a [DPhil/PhD candidate / role] at [Institution].
+            I work at the intersection of [ML/AI] and [biology / RNA therapeutics /
+            whatever you want SAIL to see].
+          </p>
+          <p>
+            My research focuses on [1–2 sentence research focus: e.g. building generative
+            models for scientific discovery, multimodal reasoning over biological data,
+            etc.].
+          </p>
+          <p>
+            Previously, I [1–2 sentences about previous degrees, labs, fellowships,
+            relevant awards].
+          </p>
+
+          <div class="logo-row">
+            <!-- <img src="logo1.png" alt="Institution 1" />
+            <img src="logo2.png" alt="Institution 2" />
+            <img src="logo3.png" alt="Institution 3" /> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG POSTS SECTION -->
+    <section id="blogs" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Blog Posts</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <p class="section-intro">
+        Selected substacks on the intersection of bits and atoms.
       </p>
+
+      <div class="card-list">
+        <!-- Blog post card -->
+        <article class="card blog-card">
+          <div class="card-main">
+            <div class="card-number">3</div>
+            <div class="card-content">
+              <div class="card-title">
+                Three part  of your latest post or article.
+              </div>
+              <div class="card-subtitle">
+                Short one-line description of what it is about.
+              </div>
+            </div>
+          </div>
+          <div class="card-meta">
+            <span class="pill pill-muted">Month 2025</span>
+            <a class="pill pill-primary" href="https://link-to-post" target="_blank">
+              Read Post →
+            </a>
+          </div>
+        </article>
+
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        Feel free to reach out about collaborations, talks, or questions about my work.
-      </p>
-      <ul>
-        <li>Email: inga [dot] vandenbossche [at] exeter [dot] ox [dot] ac [dot] uk</li>
-        <li>GitHub: <a href="https://github.com/ilv18" target="_blank">ilv18</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/ingavandenbossche/" target="_blank">Inga Van den Bossche</a></li>
-      </ul>
-    </section>
+    <!-- AWARDS SECTION -->
+    <section id="awards" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Select Awards, Fellowships & Affiliations</h2>
+        <div class="section-underline"></div>
+      </div>
 
-    <section id="blogs">
-      <h2>Blog Posts</h2>
-      <p>Selected posts or pieces I’ve written.</p>
-      <ol>
-        <li>
-          Title of post, Venue / Blog, Year –
-          <a href="https://link-to-post">Read post →</a>
-        </li>
-      </ol>
-    </section>
+      <div class="card-list">
+        <article class="card award-card">
+          <div class="card-main">
+            <div class="card-title">RoseTrees PhD Plus Scholarship</div>
+            <div class="card-subtitle">RoseTrees Trust</div>
+          </div>
+          <div class="card-meta">
+            <span class="pill pill-muted">2025</span>
+          </div>
+        </article>
 
-    <section id="awards">
-      <h2>Select Awards, Fellowships & Affiliations</h2>
-      <ul>
-        <li>Fellowship / Award name, Year – Organisation</li>
-        <li>Another thing, Year – Organisation</li>
-      </ul>
+        <article class="card award-card">
+          <div class="card-main">
+            <div class="card-title">Big If True (BiTS) Fellow</div>
+            <div class="card-subtitle">Renaissance Philanthropy</div>
+          </div>
+          <div class="card-meta">
+            <span class="pill pill-muted">2025</span>
+          </div>
+        </article>
+
+        <!-- Add more award-card blocks as needed -->
+      </div>
     </section>
 
     <section id="papers">
       <h2>Publications</h2>
       <p>To come soon. More details on Google Scholar / ORCID.</p>
       <ol>
+        <li>1. <em>In process</em> -- Package integrating RNA coarse-grained simulations with dimensionality reduction techniques. Technology is being licensed to a spinout from Oxford University.</li>
+        <li>2. <em>In process</em> -- Publication on the use of SPNs and DNA:RNA hybrid reaction networks for semi-quantitative diagnostics.</li>
+        <li>3. <em>In process</em> -- Publication on the use of protein-DNA complexes as a therapeutic sensor.</li>
         <!--
         <li>
           Van den Bossche I., Silva I., Park C., Creamer A., Stevens M., Year.
@@ -78,6 +152,7 @@
       <h2>CV</h2>
       <p>
         <li>May be sent upon request.</li>
+        <li>For academic queries please email me at: inga [dot] vandenbossche [at] exeter [dot] ox [dot] ac [dot] uk</li>
       </p>
     </section>
   </main>
