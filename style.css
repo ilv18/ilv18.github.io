@@ -88,12 +88,23 @@ body {
 
 /* Optional simple icon style */
 .icon-link {
-  font-size: 0.9rem;
-  padding: 0.35rem 0.7rem;
-  border-radius: 999px;
+  font-size: 1rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 50%;
   border: 1px solid var(--border-soft);
+  background: #fff;
+  color: #333;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  transition: background 0.2s ease;
   text-decoration: none;
-  color: #222;
+}
+
+.icon-link:hover {
+  background: #e8f0fe;
 }
 
 /* ---------- Section headings ---------- */
@@ -124,8 +135,57 @@ body {
   color: var(--text-muted);
 }
 
-/* ---------- Card components ---------- */
+/* ---------- Blog cards ---------- */
 
+.blog-card {
+  position: relative;
+  transition: box-shadow 0.18s ease, border-color 0.18s ease,
+    transform 0.18s ease;
+  border: 1px solid rgba(226, 230, 240, 0.9); /* soft grey */
+}
+
+.blog-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+  transform: translateX(4px); /* slight shift to the right */
+}
+
+.blog-main {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.blog-number {
+  font-weight: 600;
+  color: var(--text-main);
+  margin-top: 0.15rem;
+}
+
+.blog-text {
+  flex: 1;
+}
+
+.blog-title {
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.blog-description {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+/* date + button on the right, stacked */
+.blog-footer {
+  margin-top: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.4rem;
+}
+
+/* ---------- Generic card layout ---------- */
 .card {
   background: var(--bg-card);
   border-radius: var(--radius-lg);

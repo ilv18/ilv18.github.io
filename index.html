@@ -5,6 +5,7 @@
   <title>Your Name</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
   <!-- Top navigation bar -->
@@ -17,9 +18,15 @@
         <a href="#blogs">Blogs</a>
         <a href="#papers">Papers</a>
         <a href="#cv">CV</a>
-        <a href="https://www.linkedin.com/in/ingavandenbossche/" class="icon-link">in</a>
-        <a href="https://substack.com/@ingavdbossche" class="icon-link">Su</a>
-        <a href="https://github.com/ilv18" class="icon-link">GH</a>
+        <a class="icon-link" href="https://www.linkedin.com/in/ingavandenbossche/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a class="icon-link" href="https://substack.com/@ingavdbossche" target="_blank">
+          <i class="fa-solid fa-rss"></i> <!-- fa-pen-nib or fa-rss -->
+        </a>
+        <a class="icon-link" href="https://github.com/ilv18" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
       </nav>
     </div>
   </header>
@@ -40,18 +47,14 @@
         </div>
         <div class="about-text">
           <p>
-            Hi, I'm [Your Name], a [DPhil/PhD candidate / role] at [Institution].
-            I work at the intersection of [ML/AI] and [biology / RNA therapeutics /
-            whatever you want SAIL to see].
+            Hi, I'm Inga, a Rosetrees PhD Plus fellow completing my PhD at the University of Oxford. My research focuses on the intersection of biophysics and bioengineering.
           </p>
           <p>
-            My research focuses on [1–2 sentence research focus: e.g. building generative
-            models for scientific discovery, multimodal reasoning over biological data,
-            etc.].
+            Over the past few years I have explored the use of nucleic acid reaction networks for diagnostic and therapeutic applications alike. 
+            As part of the Stevens Group, my work is highly translational: . I have also learnt to outsource my pipetting to an I.DOT (automated pressure dispensing robot).
           </p>
           <p>
-            Previously, I [1–2 sentences about previous degrees, labs, fellowships,
-            relevant awards].
+            Previously, I completed a MEng in Materials Science and Engineering, where I first discovered though nanomaterials, DFT/MD simulations, and optoelectronics what it's like to be an artist at the nanoscale.
           </p>
 
           <div class="logo-row">
@@ -75,24 +78,22 @@
       </p>
 
       <div class="card-list">
-        <!-- Blog post card -->
         <article class="card blog-card">
-          <div class="card-main">
-            <div class="card-number">3</div>
-            <div class="card-content">
-              <div class="card-title">
-                Three part  of your latest post or article.
+          <div class="blog-main">
+            <span class="blog-number">1</span>
+            <div class="blog-text">
+              <div class="blog-title">
+                The Omics Revolution: Exploration of a cell and its environment through a spatial transcriptomics lens.
               </div>
-              <div class="card-subtitle">
-                Short one-line description of what it is about.
+              <div class="blog-description">
+                Part I of a three-part series on spatial transcriptomics (ST) diving into I. technology, II. translation, and III. the future.
               </div>
             </div>
           </div>
-          <div class="card-meta">
-            <span class="pill pill-muted">Month 2025</span>
-            <a class="pill pill-primary" href="https://link-to-post" target="_blank">
-              Read Post →
-            </a>
+        
+          <div class="blog-footer">
+            <span class="pill pill-muted">October 2024</span>
+            <a class="pill pill-primary" href="https://substack.com/@ingavdbossche/p-150368697" target="_blank"> Read Post → </a>
           </div>
         </article>
 
