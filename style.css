@@ -246,6 +246,49 @@ p {
   text-decoration: underline;
 }
 
+/* ---------- Paper publication cards layout ---------- */
+
+.paper-card {
+  /* keep your existing card look */
+}
+
+.paper-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+.paper-text {
+  flex: 1;
+}
+
+/* first line: authors / description */
+.paper-authors {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+/* second line: blue italic title link */
+.paper-title {
+  font-style: italic;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.paper-title:hover {
+  text-decoration: underline;
+}
+
+/* right-hand column: year + link pill */
+.paper-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
 
 /* ---------- Generic card layout ---------- */
 .card {
