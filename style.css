@@ -205,7 +205,7 @@ p {
 
   /* NEW: force 3 lines */
   display: -webkit-box;
-  -webkit-line-clamp: 3;     /* always show 3 lines */
+  -line-clamp: 3;     /* always show 3 lines */
   -webkit-box-orient: vertical;
   overflow: hidden;
 
@@ -221,7 +221,7 @@ p {
 
   /* NEW: force 2 lines */
   display: -webkit-box;
-  -webkit-line-clamp: 1;      /* change to 1 if you prefer */
+  -line-clamp: 1;      /* change to 1 if you prefer */
   -webkit-box-orient: vertical;
   overflow: hidden;
 
@@ -274,11 +274,6 @@ p {
 }
 
 /* ---------- Paper publication cards layout ---------- */
-
-.paper-card {
-  /* keep your existing card look */
-}
-
 .paper-content {
   display: flex;
   justify-content: space-between;
