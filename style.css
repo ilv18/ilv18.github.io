@@ -141,22 +141,35 @@ body {
   color: var(--text-muted);
 }
 
+/* Align About Me section text to ragged-right (left aligned) */
+p {
+  text-align: left;
+}
+
 /* ---------- Blog cards ---------- */
 
 /* ---------- Blog grid: three cards side-by-side ---------- */
 
 .blog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  display: flex;
   gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+
+  /* nice scrolling behaviour */
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
-/* Each blog card acts as a vertical stack */
 .blog-card {
   display: flex;
   flex-direction: column;
   height: 100%;
   padding: 1.1rem 1.2rem 1.2rem;
+
+  /* NEW: behave like slides in a horizontal row */
+  flex: 0 0 320px;         /* width of each card; tweak 300–340 if you like */
+  scroll-snap-align: start;
 }
 
 .blog-title {
@@ -186,20 +199,26 @@ body {
   overflow: hidden;
 
   line-height: 1.25;
-  min-height: calc(1.25rem * 2);
+  min-height: calc(1.25rem * 1);
   margin-bottom: 0.1rem;      /* spacing before image */
 }
 
 /* Image block from Substack */
 .blog-image {
   margin-top: 0.9rem;
-  border-radius: 3px;
+  border-radius: 6px;      /* your updated choice */
   overflow: hidden;
+
+  /* NEW: lock image block height */
+  height: 200px;           /* adjust to taste: 180–240px works great */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .blog-image img {
   width: 100%;
-  display: block;
+  height: 100%;
   object-fit: cover;
 }
 
