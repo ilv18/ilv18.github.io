@@ -68,6 +68,16 @@ body {
   flex-wrap: wrap;
 }
 
+.site-nav a {
+  color: #6b21a8;  /* same purple tone from Font Awesome icons */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-nav a:hover {
+  color: #4a148c;  /* a slightly darker purple on hover */
+}
+
 .nav-link {
   font-size: 0.95rem;
   padding: 0.35rem 0.8rem;
@@ -143,7 +153,9 @@ body {
 
 /* Align About Me section text to ragged-right (left aligned) */
 p {
-  text-align: left;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 
 /* ---------- Blog cards ---------- */
@@ -271,16 +283,17 @@ p {
 
 /* second line: blue italic title link */
 .paper-title {
-  font-style: italic;
-  color: var(--accent);
-  text-decoration: none;
+  font-style: normal;
+  color: var(--text-muted); 
+  text-decoration: none;      /* remove underline */
+  font-weight: 400; 
   font-size: 0.95rem;
 }
 
 .paper-title:hover {
-  text-decoration: underline;
+  text-decoration: none;      /* no underline on hover */
+  color: var(--text-muted);   /* stays grey */
 }
-
 /* right-hand column: year + link pill */
 .paper-side {
   display: flex;
@@ -343,24 +356,24 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.4rem 1rem;   /* was smaller */
+  padding: 0.4rem 1rem;
   border-radius: 999px;   /* fully round */
-  font-size: 0.9rem;      /* slightly larger */
+  font-size: 0.7rem;
   font-weight: 500;
 }
 
 .pill-muted { /* grey pill for dates */
   background: #eef0f6;
   color: #555;
-  padding: 0.35rem 1rem;
+  padding: 0.3rem 0.8rem;
   font-weight: 500;
 }
 
 .pill-primary {
   background: var(--accent);
   color: #ffffff;
-  padding: 0.45rem 1.2rem;   /* taller + wider */
-  font-weight: 600;
+  padding: 0.4rem 0.8rem;   /* taller + wider */
+  font-weight: 500;
 }
 
 .pill-primary:hover {
