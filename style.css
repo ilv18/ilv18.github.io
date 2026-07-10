@@ -60,7 +60,7 @@ body {
 }
 
 .site-title {
-  font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Fraunces, "Tiempos Headline", "Times New Roman", Georgia, serif;
   font-weight: 700;
   font-size: 1.2rem;
   color: #00224A;
@@ -398,7 +398,7 @@ p {
 }
 
 .pill-primary {
-  background: var(--accent);
+  background: var(--bg);
   color: #ffffff;
   padding: 0.4rem 0.8rem;   /* taller + wider */
   font-weight: 500;
