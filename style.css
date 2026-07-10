@@ -5,7 +5,7 @@
 :root {
   --bg: #FBF7EE;
   --bg-card: #ffffff;
-  --text-main: #111111;
+  --text-main: #00224A;
   --text-muted: #666666;
   --accent: #0b72ff;
   --border-soft: #e2e6f0;
@@ -61,7 +61,7 @@ body {
 
 .site-title {
   font-family: Fraunces, "Tiempos Headline", "Times New Roman", Georgia, serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.2rem;
   color: #00224A;
 }
