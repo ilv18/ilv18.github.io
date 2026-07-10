@@ -42,7 +42,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: #ffffff;
+  background: var(--bg);
   border-bottom: 1px solid var(--border-soft);
   box-shadow: 0 3px 12px rgba(15, 23, 42, 0.05);
 }
@@ -166,6 +166,7 @@ section {
 .section-title {
   font-family: Fraunces, "Tiempos Headline", "Times New Roman", Georgia, serif;
   font-size: 1.8rem;
+  font-weight: 400;
   margin: 0 0 0.25rem;
   color: #00224A;
 }
@@ -174,7 +175,7 @@ section {
   width: 60px;
   height: 3px;
   border-radius: 999px;
-  background: var(--accent);
+  background: #E54B3F;
 }
 
 .section-intro {
